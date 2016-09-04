@@ -63,17 +63,17 @@ local query = blocks[1]
     if msg.cb then
 	if query == 'aboutus' then
 		local keyboard = do_keyboard_aboutus()
-		local text = [[_Please select an option ..._]]
+		local text = [[لطفا انتخاب کنید]]
 		api.editMessageText(chat, msg_id, text, keyboard, true)
     end
 	if query == 'owners' then
 		local keyboard = do_keyboard_owners()
-		local text = [[*BeatBotTeam owners 🤓 :*]]
+		local text = [[*👤سودو ها👤*]]
 		api.editMessageText(chat, msg_id, text, keyboard, true)
     end
 	if query == 'members' then
 		local keyboard = do_keyboard_members()
-		local text = [[*BeatBotTeam admins 👥 :*]]
+		local text = [[*👥ادمین ها👥*]]
 		api.editMessageText(chat, msg_id, text, keyboard, true)
     end
 	end
