@@ -1,4 +1,4 @@
-﻿local function do_keyboard_robot()
+local function do_keyboard_robot()
     local keyboard = {}
     keyboard.inline_keyboard = {
 		{
@@ -6,7 +6,7 @@
     					},
     					{
     		    		{text = 'Buy Group 💸', callback_data = '!buygroup'},
-    		    		{text = 'Support 👥', url = 'https://telegram.me/joinchat/DJ_gkT5wuC54hwZhsa67Gw'},
+    		    		{text = 'Support 👥', url = 'https://telegram.me/joinchat/BvytAD9KL7J2PE2u0ek3ZA'},
 	    },
 	    {
 	    {text = '🔙', callback_data = '!home'}
@@ -31,7 +31,7 @@ local function do_keyboard_private()
     local keyboard = {}
     keyboard.inline_keyboard = {
     	{
-    		{text = '🌐 Site', url = 'http:/maxbot.ir'},
+    		{text = '🌐 Site', url = 'http://beatbot.ir'},
     		{text = '📡 Channels', callback_data = '!channel'},
 	    },
 		{
@@ -41,7 +41,7 @@ local function do_keyboard_private()
 	        {text = 'About Us 👥', callback_data = '!aboutus'},
         },
 	    {
-	        {text = '�MaxBotTG🔹', callback_data = '!robot'},
+	        {text = '🔸BeatBotTG🔹', callback_data = '!robot'},
         }
     }
     return keyboard
@@ -60,14 +60,14 @@ local function do_keyboard_channel()
     local keyboard = {}
     keyboard.inline_keyboard = {
     	{
-    		{text = 'Persian Channel 🇮🇷', url = 'https://telegram.me/MAXTEAMNEWS'},
+    		{text = 'Persian Channel 🇮🇷', url = 'https://telegram.me/BeatBot_team'},
 	    },
 	{
-	        		{text = 'English Channel 🇬🇧', url == 'https://telegram.me/MAXTEAMNEWS'},
+	        		{text = 'English Channel 🇬🇧', url = 'https://telegram.me/BeatBotTeam'},
 
     },
 		{
-					{text = 'News Channel 🗣', url =  'https://telegram.me/MAXTEAMNEWS'};
+					{text = 'News Channel 🗣', url = 'https://telegram.me/BeatBot_News'},
 		},
 		{
 	    {text = '🔙', callback_data = '!home'},
@@ -99,7 +99,7 @@ local action = function(msg, blocks, ln)
         local msg_id = msg.message_id
         local text
         if query == 'channel' then
-            local text = '📡 *MAXTEAM Channels :*'
+            local text = '📡 *BeatBotTeam Channels :*'
             local keyboard = do_keyboard_channel()
         api.editMessageText(msg.chat.id, msg_id, text, keyboard, true)
 end
@@ -123,7 +123,7 @@ if query == 'home' then
         api.editMessageText(msg.chat.id, msg_id, text, keyboard, true)
 end
         if query == 'share' then
-     api.sendContact(msg.from.id, '+639080258230', '�MAXBOT🔹 [ Use ! ]')
+     api.sendContact(msg.from.id, '+639380063518', '🔸ßελτ ßΘτ🔹 [ Use ! ]')
 end
     end
 
@@ -132,7 +132,7 @@ end
 return {
 	action = action,
 	triggers = {
-	    '^/(start)@MAX_TEM_BOT$',
+	    '^/(start)@BeatBotTeamBot$',
 	    '^/(start)$',
 	    '^/(help)$',
 	    '^###cb:!(home)',
