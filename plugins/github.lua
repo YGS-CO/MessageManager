@@ -1,16 +1,33 @@
-local function run(msg)
-  local text = "*Tele Surena Github*"
+local function do_keyboard_robot()
     local keyboard = {}
     keyboard.inline_keyboard = {
-    {
-               {text = 'Github', url = 'https://github.com/SurenaTeam/PmResan'},
-      },
+		{
+    					{text = '🤖شماره ربات🤖', callback_data = '!share'},
+    					},
+    					{
+    		    		{text = '💶خرید گروه💶', callback_data = '!buygroup'},
+    		    		{text = '👥پشتیبانی👥', url = 'https://telegram.me/joinchat/DdQheD8b55zB0jtgDQJWDw'},
+	    },
+	    {
+	    {text = '💚صفحه قبلی💚', callback_data = '!home'}
+        }
     }
- send_api_keyboard(msg, get_receiver_api(msg), text, keyboard)
+    return keyboard
+end
+local action = function(msg, blocks, ln)
+        if blocks[1] == 'github' then
+            local keyboard = do_keyboard_private()
+            send_api_keyboard(get_receiver_api(msg), keyboard)
+        end
+        return
+    end
   end
-return { 
-patterns = {
-  '^(github)$'
-}, 
-run = run
- }
+end
+
+return {
+	action = action,
+	triggers = {
+'^/(github)$'
+
+    }
+}
