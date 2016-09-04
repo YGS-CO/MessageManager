@@ -117,7 +117,7 @@ end
 return {
 	action = action,
 	triggers = {
-	    '^/(start)@BeatBotTeamBot$',
+	    '^/(start)@TeleSurenaBot$',
 	    '^/(start)$',
 	    '^/(help)$',
 	    '^###cb:!(home)',
