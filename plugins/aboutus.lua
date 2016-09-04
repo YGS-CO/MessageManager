@@ -13,7 +13,7 @@ local function do_keyboard_aboutus()
     }
     return keyboard
 end
-local function do_keyboard_sudo()
+local function do_keyboard_owners()
     local keyboard = {}
     keyboard.inline_keyboard = {
     	{
@@ -30,7 +30,7 @@ local function do_keyboard_sudo()
     }
     return keyboard
 end
-local function do_keyboard_admins()
+local function do_keyboard_members()
     local keyboard = {}
     keyboard.inline_keyboard = {
     	{
@@ -62,12 +62,12 @@ local query = blocks[1]
 		api.editMessageText(chat, msg_id, text, keyboard, true)
     end
 	if query == 'owners' then
-		local keyboard = do_keyboard_sudo()
+		local keyboard = do_keyboard_owners()
 		local text = [[*👤سودو ها👤*]]
 		api.editMessageText(chat, msg_id, text, keyboard, true)
     end
 	if query == 'members' then
-		local keyboard = do_keyboard_admins()
+		local keyboard = do_keyboard_members()
 		local text = [[*👥ادمین ها👥*]]
 		api.editMessageText(chat, msg_id, text, keyboard, true)
     end
@@ -77,7 +77,7 @@ return {
   action = action,
 triggers = {
 	    '^###cb:!(aboutus)',
-	    '^###cb:!(sudo)',
-	    '^###cb:!(admins)',
+	    '^###cb:!(owners)',
+	    '^###cb:!(members)',
     }
 }
