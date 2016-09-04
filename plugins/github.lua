@@ -3,7 +3,7 @@ local function run(msg)
     local keyboard = {}
     keyboard.inline_keyboard = {
     {
-               {text = 'Github', url = 'https://github.com/SurenaTeam'},
+               {text = 'Github', url = 'https://github.com/SurenaTeam/PmResan'},
       },
     }
  send_api_keyboard(msg, get_receiver_api(msg), text, keyboard)
