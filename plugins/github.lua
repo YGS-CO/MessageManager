@@ -2,16 +2,9 @@ local function do_keyboard_robot()
     local keyboard = {}
     keyboard.inline_keyboard = {
 		{
-    					{text = '🤖شماره ربات🤖', callback_data = '!share'},
-    					},
-    					{
-    		    		{text = '💶خرید گروه💶', callback_data = '!buygroup'},
-    		    		{text = '👥پشتیبانی👥', url = 'https://telegram.me/joinchat/DdQheD8b55zB0jtgDQJWDw'},
-	    },
-	    {
-	    {text = '💚صفحه قبلی💚', callback_data = '!home'}
+    		{text = 'Github', url = 'https://github.com/SurenaTeam/PmResan'}
+	        },
         }
-    }
     return keyboard
 end
 local action = function(msg, blocks, ln)
