@@ -18,6 +18,8 @@ bot_init = function(on_reload) -- The function run when the bot is started or re
 	end
 	print(colors('%{yellow}Writed By Surena Team.'))
 	print(colors('%{yellow}Bot Running.................'))
+	cross = dofile('utilities.lua') -- Load miscellaneous and cross-plugin functions.
+	print(colors('%{blue bright}Loading API functions table...'))
 	api = require('methods')
 	
 	tot = 0
