@@ -1,11 +1,10 @@
 # PmResanBot
 
-# This bot based on [GroupButler](https://github.com/SurenaTeam/PmResan) Edited By Komeil And NavidQuick
+## This bot based on [GroupButler](https://github.com/SurenaTeam/PmResan) Edited By Komeil And NavidQuick
 
 ##Setup
 
 ```bash
-
 $ wget http://luarocks.org/releases/luarocks-2.2.2.tar.gz
 $ tar zxpf luarocks-2.2.2.tar.gz
 $ cd luarocks-2.2.2
