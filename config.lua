@@ -1,6 +1,6 @@
 return {
 	bot_api_key = 'Your Token',
-	admin = 232006008, 
+	admin = 232006008,239832443,142141024,198794027,229265735,192467068,92688856,239299058,141987705,215971722,209414312,72979216,
 	channel = '@TeleSurenaCH', --channel username with the '@'
 
 	plugins = {
