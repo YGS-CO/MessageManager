@@ -1,6 +1,6 @@
 # PmResanBot
 
-## This bot based on [GroupButler](https://github.com/RememberTheAir/GroupButler)
+## This bot based on GroupButler And BeatBotTeam
 
 
 ## Setup
