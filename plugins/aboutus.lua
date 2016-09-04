@@ -29,12 +29,12 @@ local function do_keyboard_members()
     local keyboard = {}
     keyboard.inline_keyboard = {
     	{
-			{text = '● Amir SbsS ●' , url = 'telegram.me/amir_h'},
-			{text = '● Mr Jan123 ●', url = 'telegram.me/i_am_jan123'},
+			{text = 'AƖιяєzα' , url = 'telegram.me/Alirezaw_Tabrizi'},
+			{text = 'A.r.a.d', url = 'telegram.me/Win3ton_021'},
 			},
 			{
-			{text = '● IDeaCtiVe ●', url = 'telegram.me/Ideactive'},
-			{text = '● YellowHat ●', url = 'telegram.me/yellowhat'},
+			{text = '»»ρσoყα➣ραყԃαɾ««', url = 'telegram.me/Pooya_Paydar'},
+			{text = 'MrNitro', url = 'telegram.me/Mr_Nitro'},
 			},
 			{
 	    {text = '💚صفحه قبلی💚', callback_data = '!aboutus'},
