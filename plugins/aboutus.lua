@@ -8,7 +8,7 @@ local function do_keyboard_aboutus()
 			{text = '👥ادمین ها👥', callback_data = '!members'},
 			},
 			{
-	    {text = '🔙صفحه قبلی', callback_data = '!home'},
+	    {text = '💚صفحه قبلی💚', callback_data = '!home'},
 	    }
     }
     return keyboard
@@ -20,7 +20,7 @@ local function do_keyboard_owners()
     		{text = '● AmirHo3inF ●', url = 'http://telegram.me/amirho3inf'},},
 			{{text = '● FasT ReaCtoR ●', url = 'http://telegram.me/fastreactor'},},
 			{{text = '● NariMan Master ●', url = 'http://telegram.me/Nawr_i_man'},},
-			{{text = '🔙صفحه قبلی', callback_data = '!aboutus'},
+			{{text = '💚صفحه قبلی💚', callback_data = '!aboutus'},
 	    }
     }
     return keyboard
@@ -29,29 +29,15 @@ local function do_keyboard_members()
     local keyboard = {}
     keyboard.inline_keyboard = {
     	{
-			{text = '● Amir SbsS ●' , url = 'telegram.me/amir_h'},
-			{text = '● Mr Jan123 ●', url = 'telegram.me/i_am_jan123'},
+			{text = 'َ#AƖιяєzα👑' , url = 'telegram.me/Alirezaw_Tabrizi'},
+			{text = 'A.r.a.d', url = 'telegram.me/Win3ton_021'},
 			},
 			{
-			{text = '● MehdiHS ●', url = 'telegram.me/mehdihs'},
-			{text = '● ThisisAmirh ●' , url = 'telegram.me/mr_amirh'},
-			{text = '● M.G.Z ●' , url = 'telegram.me/M_G_Z'},
+			{text = '»»ρσoყα➣ραყԃαɾ««', url = 'telegram.me/Pooya_Paydar'},
+			{text = 'MrNitro' , url = 'telegram.me/Mr_Nitro'},
 			},
 			{
-			{text = '● MrHaliX ●' , url = 'telegram.me/mrhalix'},
-			{text = '● The PoKeR ●', url = 'telegram.me/UnFriendlly'},
-			},
-			{
-			{text = '● AmircC ●', url = 'telegram.me/Amircc_CreeD'},
-			{text = '● PuKeR ●', url = 'telegram.me/pukers'},
-			{text = '● PediW ●', url = 'telegram.me/pediw'},
-			},
-			{
-			{text = '● IDeaCtiVe ●', url = 'telegram.me/Ideactive'},
-			{text = '● YellowHat ●', url = 'telegram.me/yellowhat'},
-			},
-			{
-	    {text = '🔙صفحه قبلی', callback_data = '!aboutus'},
+	    {text = '💚صفحه قبلی💚', callback_data = '!aboutus'},
         }
     }
     return keyboard
