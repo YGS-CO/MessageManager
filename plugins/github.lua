@@ -10,7 +10,7 @@ local function run(msg)
   end
 return { 
 patterns = {
-  '^/(github)$',
+  '^(github)$'
 }, 
 run = run
  }
