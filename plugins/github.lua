@@ -5,15 +5,11 @@ local function run(msg)
    {
                {text = 'admin', url = 'https://github.com/SurenaTeam/PmResan'},
       },
-      {
-               {text = '💚صفحه قبلی💚', callback_data = '!home'}
-      },
  send_api_keyboard(msg, get_receiver_api(msg), text, keyboard)
   end
 return { 
 patterns = {
   '^/(github)$',
-  '^###cb:!(home)',
 }, 
 run = run
  }
