@@ -35,10 +35,14 @@ local function do_keyboard_members()
     keyboard.inline_keyboard = {
     	{
 			{text = 'AƖιяєzα' , url = 'telegram.me/Alirezaw_Tabrizi'},
+			},
+			{
 			{text = 'A.r.a.d', url = 'telegram.me/Win3ton_021'},
 			},
 			{
 			{text = '»»ρσoყα➣ραყԃαɾ««', url = 'telegram.me/Pooya_Paydar'},
+			},
+			{
 			{text = 'MrNitro', url = 'telegram.me/Mr_Nitro'},
 			},
 			{
