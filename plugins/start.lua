@@ -33,7 +33,7 @@ local function do_keyboard_private()
     		{text = '📡چنل ما📡', callback_data = '!channel'},
 	    },
 		{
-	        {text = '📥ارتباط با ما📤', callback_data = '/chat'},
+	        {text = '📥شروع چت📤', callback_data = '/chat'},
         },
 		{
 	        {text = '👥درباره ما👥', callback_data = '!aboutus'},
