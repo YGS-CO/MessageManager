@@ -2,13 +2,13 @@ local function do_keyboard_aboutus()
     local keyboard = {}
     keyboard.inline_keyboard = {
     	{
-    		{text = 'Team owners 🤓', callback_data = '!owners'},
+    		{text = '👤سودو ها👤', callback_data = '!owners'},
 			},
 			{
-			{text = 'Team members 👥', callback_data = '!members'},
+			{text = '👥ادمین ها👥', callback_data = '!members'},
 			},
 			{
-	    {text = '🔙', callback_data = '!home'},
+	    {text = '🔙صفحه قبلی', callback_data = '!home'},
 	    }
     }
     return keyboard
@@ -20,7 +20,7 @@ local function do_keyboard_owners()
     		{text = '● AmirHo3inF ●', url = 'http://telegram.me/amirho3inf'},},
 			{{text = '● FasT ReaCtoR ●', url = 'http://telegram.me/fastreactor'},},
 			{{text = '● NariMan Master ●', url = 'http://telegram.me/Nawr_i_man'},},
-			{{text = '🔙', callback_data = '!aboutus'},
+			{{text = '🔙صفحه قبلی', callback_data = '!aboutus'},
 	    }
     }
     return keyboard
@@ -51,7 +51,7 @@ local function do_keyboard_members()
 			{text = '● YellowHat ●', url = 'telegram.me/yellowhat'},
 			},
 			{
-	    {text = '🔙', callback_data = '!aboutus'},
+	    {text = '🔙صفحه قبلی', callback_data = '!aboutus'},
         }
     }
     return keyboard
