@@ -9,7 +9,7 @@ local function do_keyboard_robot()
     		    		{text = '👥پشتیبانی👥', url = 'https://telegram.me/joinchat/DdQheD8b55zB0jtgDQJWDw'},
 	    },
 	    {
-	    {text = '🔙', callback_data = '!home'}
+	    {text = '💚صفحه قبلی💚', callback_data = '!home'}
         }
     }
     return keyboard
@@ -21,7 +21,7 @@ local function do_keyboard_buygroup()
     		    		{text = '👤برای خرید  کلیک کنید👤', url = 'https://telegram.me/joinchat/DdQheD8b55zB0jtgDQJWDw'},
 	    },
 	    {
-	    {text = '🔙صفحه قبلی🔙', callback_data = '!robot'}
+	    {text = '💚صفحه قبلی💚', callback_data = '!robot'}
         }
     }
     return keyboard
@@ -61,7 +61,7 @@ local function do_keyboard_channel()
     		{text = '🇮🇷کانال ما🇮🇷', url = 'https://telegram.me/TeleSurenaCH'},
 		},
 		{
-	    {text = '🔙صفحه قبلی🔙', callback_data = '!home'},
+	    {text = '💚صفحه قبلی💚', callback_data = '!home'},
         }
     
     }
