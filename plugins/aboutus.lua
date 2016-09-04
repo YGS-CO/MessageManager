@@ -1,11 +1,11 @@
-﻿local function do_keyboard_aboutus()
+local function do_keyboard_aboutus()
     local keyboard = {}
     keyboard.inline_keyboard = {
     	{
-    		{text = '👤سودو ها👤', callback_data = '!sudoers'},
+    		{text = '👤سودو ها👤', callback_data = '!owners'},
 			},
 			{
-			{text = '👥ادمین ها👥', callback_data = '!admins'},
+			{text = '👥ادمین ها👥', callback_data = '!members'},
 			},
 			{
 	    {text = '🔙صفحه قبلی', callback_data = '!home'},
@@ -13,7 +13,7 @@
     }
     return keyboard
 end
-local function do_keyboard_sudoers()
+local function do_keyboard_owners()
     local keyboard = {}
     keyboard.inline_keyboard = {
 {
@@ -38,7 +38,7 @@ local function do_keyboard_sudoers()
     }
     return keyboard
 end
-local function do_keyboard_admins()
+local function do_keyboard_members()
     local keyboard = {}
     keyboard.inline_keyboard = {
     	{
@@ -65,13 +65,13 @@ local query = blocks[1]
 		local text = [[لطفا انتخاب کنید]]
 		api.editMessageText(chat, msg_id, text, keyboard, true)
     end
-	if query == 'sudoers' then
-		local keyboard = do_keyboard_sudoers()
+	if query == 'owners' then
+		local keyboard = do_keyboard_owners()
 		local text = [[*👤سودو ها👤*]]
 		api.editMessageText(chat, msg_id, text, keyboard, true)
     end
-	if query == 'admins' then
-		local keyboard = do_keyboard_admins()
+	if query == 'members' then
+		local keyboard = do_keyboard_members()
 		local text = [[*👥ادمین ها👥*]]
 		api.editMessageText(chat, msg_id, text, keyboard, true)
     end
@@ -81,7 +81,7 @@ return {
   action = action,
 triggers = {
 	    '^###cb:!(aboutus)',
-	    '^###cb:!(sudoers)',
-	    '^###cb:!(admins)',
+	    '^###cb:!(owners)',
+	    '^###cb:!(members)',
     }
 }
