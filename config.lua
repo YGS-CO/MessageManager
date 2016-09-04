@@ -4,7 +4,7 @@ return {
 	channel = '@TeleSurenaCH', --channel username with the '@'
 
 	plugins = {
-		'start.lua','aboutus.lua','contactus.lua','github.lua',
+		'start.lua','aboutus.lua','contactus.lua',
 	},
 	api_errors = {
 		[101] = 'Not enough rights to kick participant', --SUPERGROUP: bot is not admin
