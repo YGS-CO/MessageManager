@@ -17,7 +17,7 @@ if chat_info == 'block' then
  api.sendMessage(msg.chat.id, '*شما در لیست سیاه قرار دارید*', true) 
 else
  db:hset(hash, user_id, 'true')
- api.sendMessage(msg.chat.id, '*چت شروع شد*\n*پیام خود را ارسال کنید و متظر جواب بمانید*', true) 
+ api.sendMessage(msg.chat.id, '*چت شروع شد*\n`پیام خود را ارسال کنید و متظر جواب بمانید`', true) 
  end
  end
 if blocks[1] == 'end' then
@@ -25,13 +25,13 @@ if chat_info == 'block' or chat_info == 'false' then
 return nil 
 else
  db:hset(hash, user_id, 'false')
-api.sendMessage(msg.chat.id, '*چت پایان یافت.*\n*برای چت دوباره*/chat*را بفرستید*', true) 
+api.sendMessage(msg.chat.id, '*چت پایان یافت.*\n`برای چت دوباره` /chat `را بفرستید`', true) 
 end
 end
 if msg.chat.type == 'private' and chat_info == 'true' then
 if blocks[1] == 'end' or blocks[1] == 'chat' then return nil end
 api.forwardMessage('-170842792', msg.chat.id, msg_id) 
-api.sendKeyboard(msg.chat.id, '*پبام شما ارسال شد *\n*لطفا منتظر بمانید*'  ,do_keyboard_endchat(), true)
+api.sendKeyboard(msg.chat.id, '*پبام شما ارسال شد *\n`لطفا منتظر بمانید`'  ,do_keyboard_endchat(), true)
 end
 if blocks[1] == 'block' then
 if msg.reply and msg.reply.forward_from and msg.chat.type == 'group' and msg.chat.id == -170842792 and not blocks[2] then
