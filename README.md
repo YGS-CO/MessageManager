@@ -1,6 +1,6 @@
 # PmResanBot
 
-# This bot based on [GroupButler](https://github.com/SurenaTeam/PmResan) By Komeil
+# This bot based on [GroupButler](https://github.com/SurenaTeam/PmResan) Edited By Komeil And NavidQuick
 
 ##Setup
 
