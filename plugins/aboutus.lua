@@ -17,9 +17,14 @@ local function do_keyboard_owners()
     local keyboard = {}
     keyboard.inline_keyboard = {
     	{
-    		{text = '● AmirHo3inF ●', url = 'http://telegram.me/amirho3inf'},},
-			{{text = '● FasT ReaCtoR ●', url = 'http://telegram.me/fastreactor'},},
-			{{text = '● NariMan Master ●', url = 'http://telegram.me/Nawr_i_man'},},
+    		{text = 'Dr.Cyber', url = 'http://telegram.me/DrCyber'},},
+			{{text = 'NavidQuick', url = 'http://telegram.me/NavidQuick'},},
+			{{text = 'HamedQuick', url = 'http://telegram.me/HamedQuick'},},
+			{{text = 'Mr_Nitro', url = 'http://telegram.me/Mr_Nitro'},},
+			{{text = 'Pouria', url = 'http://telegram.me/This_Is_Pouria'},},
+			{{text = 'Soheil', url = 'http://telegram.me/Soheil_MAX'},},
+			{{text = 'Shaghayegh', url = 'http://telegram.me/Shaghayegh_Quick'},},
+			{{text = 'Mehdi', url = 'http://telegram.me/Uconn_Quick'},},
 			{{text = '💚صفحه قبلی💚', callback_data = '!aboutus'},
 	    }
     }
