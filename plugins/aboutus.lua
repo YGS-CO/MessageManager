@@ -8,9 +8,6 @@ local function do_keyboard_aboutus()
 			{text = 'Team members 👥', callback_data = '!members'},
 			},
 			{
-			{text = 'Our friends 🌹', callback_data = '!friends'},
-			},
-			{
 	    {text = '🔙', callback_data = '!home'},
 	    }
     }
@@ -59,25 +56,6 @@ local function do_keyboard_members()
     }
     return keyboard
 end
-local function do_keyboard_friends()
-    local keyboard = {}
-    keyboard.inline_keyboard = {
-	        {
-			{text = '● ShabGarD ●', url = 'telegram.me/night_011'},
-			},
-			{
-			{text = '● Empix ●', url = 'telegram.me/empix'},
-			{text = '● CreeD ●' , url = 'telegram.me/mute_all'},
-			},
-			{
-						{text = '● ReZaHextor ●', url = 'telegram.me/hextor_admin'},
-},
-			{
-	    {text = '🔙', callback_data = '!aboutus'},
-        }
-    }
-    return keyboard
-end
 local action = function(msg,blocks)
 local msg_id = msg.message_id
 local chat = msg.chat.id
@@ -98,11 +76,6 @@ local query = blocks[1]
 		local text = [[*BeatBotTeam admins 👥 :*]]
 		api.editMessageText(chat, msg_id, text, keyboard, true)
     end
-	if query == 'friends' then
-		local keyboard = do_keyboard_friends()
-		local text = [[*BeatBotTeam friends 🌹 :*]]
-		api.editMessageText(chat, msg_id, text, keyboard, true)
-    end
 	end
 	end
 return {
@@ -111,6 +84,5 @@ triggers = {
 	    '^###cb:!(aboutus)',
 	    '^###cb:!(owners)',
 	    '^###cb:!(members)',
-	    '^###cb:!(friends)',
     }
 }
