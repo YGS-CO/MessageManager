@@ -66,12 +66,12 @@ local query = blocks[1]
 		api.editMessageText(chat, msg_id, text, keyboard, true)
     end
 	if query == 'sudoers' then
-		local keyboard = do_keyboard_owners()
+		local keyboard = do_keyboard_sudoers()
 		local text = [[*👤سودو ها👤*]]
 		api.editMessageText(chat, msg_id, text, keyboard, true)
     end
 	if query == 'admins' then
-		local keyboard = do_keyboard_members()
+		local keyboard = do_keyboard_admins()
 		local text = [[*👥ادمین ها👥*]]
 		api.editMessageText(chat, msg_id, text, keyboard, true)
     end
