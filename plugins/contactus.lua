@@ -71,7 +71,7 @@ end
    msg = msg.reply_to_message
     local receiver = msg.forward_from.id
     local input = blocks[1]
-      api.sendMessage(receiver, '*جواب اوپراتور : *\n\n'..input, false)
+      api.sendMessage(receiver, '*جواب اوپراتور* : \n\n'..input, false)
 end
 end
 return {
