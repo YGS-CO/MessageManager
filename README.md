@@ -1,8 +1,9 @@
 # PmResanBot
 
-## This bot based on [GroupButler](https://github.com/SurenaTeam/PmResan) Edited By Komeil And NavidQuick
+## This bot based on [GroupButler](https://github.com/RememberTheAir/GroupButler)
 
-##Setup
+
+## Setup
 
 ```bash
 $ wget http://luarocks.org/releases/luarocks-2.2.2.tar.gz
