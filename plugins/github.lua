@@ -1,25 +1,25 @@
-local function do_keyboard_robot()
+local function run(msg)
+  local text = "*TeleDanger* `1.2An Advanced Administration Api Bot Based On TeleSeed Written In Lua` "
     local keyboard = {}
-    local text = "*TeleSurena Github*"
     keyboard.inline_keyboard = {
-		{
-    		{text = 'Github', url = 'https://github.com/SurenaTeam/PmResan'}
-	        },
-        }
-    return keyboard
-end
-local action = function(msg, blocks)
-        if blocks[1] == 'github' then
-            local keyboard = do_keyboard_private()
-            send_api_keyboard(get_receiver_api(msg), keyboard, text)
-        end
-        return
-    end
-  end
-return {
-	action = action,
-	triggers = {
-'^/(github)$'
-
+   {
+               {text = 'admin', url = 'Telegram.Me/Xxcrazy_BoyxX'},
+      },
+      {
+               {text = 'manager', url = 'Telegram.Me/:|test'},
+      },
+     {
+               {text = 'channel“ˆ', url = 'Telegram.Me/openplugins'},
+      },
     }
-}
+ send_api_keyboard(msg, get_receiver_api(msg), text, keyboard)
+  end
+return { 
+patterns = {
+"teledanger",
+}, 
+run = run
+ }
+
+
+
