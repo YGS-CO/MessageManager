@@ -18,7 +18,7 @@ local function do_keyboard_owners()
     keyboard.inline_keyboard = {
     	{
     		{text = 'Dr.Cyber', url = 'http://telegram.me/DrCyber'},},
-			{{text = 'NavidQuick', url = 'http://telegram.me/NavidQuick'},},
+			{{text = 'NavidQuick', url = 'http://telegram.me/Navid_Quick'},},
 			{{text = 'Mr_Nitro', url = 'http://telegram.me/Mr_Nitro'},},
 			{{text = 'Pouria', url = 'http://telegram.me/This_Is_Pouria'},},
 			{{text = 'Shaghayegh', url = 'http://telegram.me/Shaghayegh_Quick'},},
