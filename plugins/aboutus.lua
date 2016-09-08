@@ -56,8 +56,6 @@ local action = function(msg, blocks, ln)
 			if msg.chat.type == 'group' or msg.chat.type == 'supergroup' then
           api.sendKeyboard(msg.chat.id, '*SurenaTeam*\nربات اول ما آقای همه کاره نام داشت و توسط NavidQuick و Dr Cyber نوشته شده بود بعد از آن ربات جدید با نام TeleSurena ساخته شد با سورس جدید و انگلیسی ربات های ما طی اول ما آقای همه کاره زمانی که تنها سه ربات فارسی وجود داشت ربات ما درد درجه سوم بود و الان ربات های فارسی دیگری ساخته شده . رب' ,do_keyboard_aboutus(), true)
         end
-        return
-    end
 
 local action = function(msg,blocks)
 local msg_id = msg.message_id
