@@ -22,7 +22,7 @@ local function do_keyboard_owners()
 			{{text = 'Mr_Nitro', url = 'http://telegram.me/Mr_Nitro'},},
 			{{text = 'Pouria', url = 'http://telegram.me/This_Is_Pouria'},},
 			{{text = 'Shaghayegh', url = 'http://telegram.me/Shaghayegh_Quick'},},
-			{{text = 'Mehdi', url = 'http://telegram.me/Uconn_Quick'},},
+			{{text = 'Mehdi', url = 'http://telegram.me/Uconn'},},
 			{{text = '💚صفحه قبلی💚', callback_data = '!aboutus'},
 	    }
     }
@@ -35,7 +35,7 @@ local function do_keyboard_members()
 			{text = 'AƖιяєzα' , url = 'telegram.me/Alirezaw_Tabrizi'},
 			},
 			{
-			{text = '»»ρσoყα➣ραყԃαɾ««', url = 'telegram.me/Pooya_Paydar'},
+			{text = '»»ρσoყα➣ραყԃαɾ««'},
 			},
 			{
 	    {text = '💚صفحه قبلی💚', callback_data = '!aboutus'},
