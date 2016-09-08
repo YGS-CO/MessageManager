@@ -69,14 +69,6 @@ local function do_keyboard_channel()
 end
 
 local action = function(msg, blocks, ln)
-    if blocks[1] == 'aboutus' then
-        db:hset('bot:users', msg.from.id, 'xx')
-        db:hincrby('bot:general', 'users', 1)
-			if msg.chat.type == 'private' or msg.chat.type == 'group' or msg.chat.type == 'supergroup' then
-          api.sendKeyboard(msg.chat.id, '*SurenaTeam*\nربات اول ما آقای همه کاره نام داشت و توسط NavidQuick و Dr Cyber نوشته شده بود بعد از آن ربات جدید با نام TeleSurena ساخته شد با سورس جدید و انگلیسی ربات های ما طی اول ما آقای همه کاره زمانی که تنها سه ربات فارسی وجود داشت ربات ما درد درجه سوم بود و الان ربات های فارسی دیگری ساخته شده . رب' ,do_keyboard_aboutus(), true)
-          return
-  end
-  
     if blocks[1] == 'start' or blocks[1] == 'help' then
         db:hset('bot:users', msg.from.id, 'xx')
         db:hincrby('bot:general', 'users', 1)
@@ -129,7 +121,6 @@ return {
 	    '^/(start)@TeleSurenaBot$',
 	    '^/(start)$',
 	    '^/(help)$',
-	    '^/(aboutus)$',
 	    '^###cb:!(home)',
 		'^###cb:!(buygroup)',
 	    '^###cb:!(channel)',
