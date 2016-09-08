@@ -82,7 +82,6 @@ local action = function(msg, blocks, ln)
         end
         return
     end
-    end
     
     if msg.cb then
         local query = blocks[1]
