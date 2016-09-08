@@ -55,14 +55,14 @@ if msg.reply and msg.reply.forward_from and msg.chat.type == 'group' and msg.cha
 msg = msg.reply
 local user_id = msg.forward_from.id
  db:hset(hash, user_id, 'false')
-api.sendMessage(msg.chat.id, 'کاربر '..user_id..'از لیست سیاه خارج شد', true) 
+api.sendMessage(msg.chat.id, '*کاربر '..user_id..' از لیست سیاه خارج شد*', true) 
 api.sendMessage(user_id, '*شما از لیست سیاه خارج شدید*', true) 
 else
  if msg.chat.type == 'group' and msg.chat.id == -162130700 then
   if msg.reply then return nil end
 local user_id = blocks[2]
  db:hset(hash, user_id, 'false')
-api.sendMessage(msg.chat.id, 'کاربر '..user_id..'از لیست سیاه خارج شد', true) 
+api.sendMessage(msg.chat.id, '*کاربر '..user_id..' از لیست سیاه خارج شد*', true) 
 api.sendMessage(user_id, '*شما از لیست سیاه خارج شدید*', true) 
 end 
 end
