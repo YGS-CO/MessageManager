@@ -21,7 +21,6 @@ local function do_keyboard_owners()
 			{{text = 'NavidQuick', url = 'http://telegram.me/Navid_Quick'},},
 			{{text = 'Mr_Nitro', url = 'http://telegram.me/Mr_Nitro'},},
 			{{text = 'Pouria', url = 'http://telegram.me/This_Is_Pouria'},},
-			{{text = 'Shaghayegh', url = 'http://telegram.me/Shaghayegh_Quick'},},
 			{{text = 'Mehdi', url = 'http://telegram.me/Uconn'},},
 			{{text = '💚صفحه قبلی💚', callback_data = '!aboutus'},
 	    }
@@ -43,21 +42,6 @@ local function do_keyboard_members()
     }
     return keyboard
 end
-
-local action = function(msg,blocks,ln)
-    if blocks[1] == 'aboutus' then
-        db:hset('bot:users', msg.from.id, 'xx')
-        db:hincrby('bot:general', 'users', 1)
-        if msg.chat.type == 'private' then
-            local message = "*SurenaTeam*\nربات اول ما آقای همه کاره نام داشت و توسط NavidQuick و Dr Cyber نوشته شده بود بعد از آن ربات جدید با نام TeleSurena ساخته شد با سورس جدید و انگلیسی ربات های ما طی اول ما آقای همه کاره زمانی که تنها سه ربات فارسی وجود داشت ربات ما درد درجه سوم بود و الان ربات های فارسی دیگری ساخته شده . رب"
-            local keyboard = do_keyboard_private()
-            api.sendKeyboard(msg.from.id, message, keyboard, true)
-            end
-			if msg.chat.type == 'group' or msg.chat.type == 'supergroup' then
-          api.sendKeyboard(msg.chat.id, '*SurenaTeam*\nربات اول ما آقای همه کاره نام داشت و توسط NavidQuick و Dr Cyber نوشته شده بود بعد از آن ربات جدید با نام TeleSurena ساخته شد با سورس جدید و انگلیسی ربات های ما طی اول ما آقای همه کاره زمانی که تنها سه ربات فارسی وجود داشت ربات ما درد درجه سوم بود و الان ربات های فارسی دیگری ساخته شده . رب' ,do_keyboard_aboutus(), true)
-        end
-        return
-        end
 
 local msg_id = msg.message_id
 local chat = msg.chat.id
@@ -83,7 +67,6 @@ local query = blocks[1]
 return {
   action = action,
 triggers = {
-	'^/(aboutus)',
 	    '^###cb:!(aboutus)',
 	    '^###cb:!(owners)',
 	    '^###cb:!(members)',
