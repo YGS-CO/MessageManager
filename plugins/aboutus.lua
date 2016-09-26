@@ -5,7 +5,7 @@ local function do_keyboard_aboutus()
     		{text = '👤سودو ها👤', callback_data = '!sudo'},
 			},
 			{
-			{text = '👥ادمین ها👥', callback_data = '!admins'},
+			{text = '👤ادمین ها👤', callback_data = '!admins'},
 			},
 			{
 	    {text = '💚صفحه قبلی💚', callback_data = '!home'},
@@ -17,11 +17,11 @@ local function do_keyboard_sudo()
     local keyboard = {}
     keyboard.inline_keyboard = {
     	{
-    		{text = 'Dr.Cyber', url = 'http://telegram.me/DrCyber'},},
-			{{text = 'NavidQuick', url = 'http://telegram.me/Navid_Quick'},},
-			{{text = 'Mr_Nitro', url = 'http://telegram.me/Mr_Nitro'},},
-			{{text = 'Pouria', url = 'http://telegram.me/This_Is_Pouria'},},
-			{{text = 'Mehdi', url = 'http://telegram.me/Uconn'},},
+    		{text = '👤Dr.Cyber👤', url = 'http://telegram.me/DrCyber'},},
+			{{text = '👤NavidQuick👤', url = 'http://telegram.me/Navid_Quick'},},
+			{{text = '👤Mr_Nitro👤', url = 'http://telegram.me/Mr_Nitro'},},
+			{{text = '👤Shaghayegh👤', url = 'http://telegram.me/Shaghayegh_Quick'},},
+			{{text = '👤Mehdi👤', url = 'http://telegram.me/Uconn'},},
 			{{text = '💚صفحه قبلی💚', callback_data = '!aboutus'},
 	    }
     }
@@ -31,10 +31,10 @@ local function do_keyboard_admins()
     local keyboard = {}
     keyboard.inline_keyboard = {
     	{
-			{text = 'AƖιяєzα' , url = 'telegram.me/Alirezaw_Tabrizi'},
+			{text = '👤AƖιяєzα👤' , url = 'telegram.me/Alirezaw_Tabrizi'},
 			},
 			{
-			{text = '»»ρσoყα➣ραყԃαɾ««' , url = 'telegram.me/Sudo_Pooya_Paydar'},
+			{text = '👤»»ρσoყα➣ραყԃαɾ««👤'},
 			},
 			{
 	    {text = '💚صفحه قبلی💚', callback_data = '!aboutus'},
@@ -42,7 +42,6 @@ local function do_keyboard_admins()
     }
     return keyboard
 end
-local action = function(msg,blocks)
 local msg_id = msg.message_id
 local chat = msg.chat.id
 local query = blocks[1]
@@ -59,10 +58,9 @@ local query = blocks[1]
     end
 	if query == 'admins' then
 		local keyboard = do_keyboard_admins()
-		local text = [[*👥ادمین ها👥*]]
+		local text = [[*👤ادمین ها👤*]]
 		api.editMessageText(chat, msg_id, text, keyboard, true)
     end
-	end
 	end
 return {
   action = action,
