@@ -34,7 +34,7 @@ local function do_keyboard_admins()
 			{text = 'AƖιяєzα' , url = 'telegram.me/Alirezaw_Tabrizi'},
 			},
 			{
-			{text = '»»ρσoყα➣ραყԃαɾ««'},
+			{text = '»»ρσoყα➣ραყԃαɾ««' , url = 'telegram.me/Sudo_Pooya_Paydar'},
 			},
 			{
 	    {text = '💚صفحه قبلی💚', callback_data = '!aboutus'},
