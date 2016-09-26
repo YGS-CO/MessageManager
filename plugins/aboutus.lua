@@ -42,6 +42,7 @@ local function do_keyboard_admins()
     }
     return keyboard
 end
+local action = function(msg,blocks)
 local msg_id = msg.message_id
 local chat = msg.chat.id
 local query = blocks[1]
@@ -52,15 +53,16 @@ local query = blocks[1]
 		api.editMessageText(chat, msg_id, text, keyboard, true)
     end
 	if query == 'sudo' then
-		local keyboard = do_keyboard_sudo()
+		local keyboard = do_keyboard_owners()
 		local text = [[*👤سودو ها👤*]]
 		api.editMessageText(chat, msg_id, text, keyboard, true)
     end
 	if query == 'admins' then
-		local keyboard = do_keyboard_admins()
+		local keyboard = do_keyboard_members()
 		local text = [[*👥ادمین ها👥*]]
 		api.editMessageText(chat, msg_id, text, keyboard, true)
     end
+	end
 	end
 return {
   action = action,
