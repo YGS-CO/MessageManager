@@ -63,7 +63,6 @@ local query = blocks[1]
 		api.editMessageText(chat, msg_id, text, keyboard, true)
     end
 	end
-	end
 return {
   action = action,
 triggers = {
