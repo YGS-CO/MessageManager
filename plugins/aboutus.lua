@@ -13,7 +13,7 @@ local function do_keyboard_aboutus()
     }
     return keyboard
 end
-local function do_keyboard_sudp()
+local function do_keyboard_sudo()
     local keyboard = {}
     keyboard.inline_keyboard = {
     	{
