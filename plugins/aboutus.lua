@@ -42,7 +42,6 @@ local function do_keyboard_admins()
     }
     return keyboard
 end
-
 local msg_id = msg.message_id
 local chat = msg.chat.id
 local query = blocks[1]
