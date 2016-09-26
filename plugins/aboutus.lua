@@ -42,11 +42,12 @@ local function do_keyboard_admins()
     }
     return keyboard
 end
+local action = function(msg,blocks)
 local msg_id = msg.message_id
 local chat = msg.chat.id
 local query = blocks[1]
     if msg.cb then
-	if query == 'aboutus' then
+if query == 'aboutus' then
 		local keyboard = do_keyboard_aboutus()
 		local text = [[*لطفا انتخاب کنید*]]
 		api.editMessageText(chat, msg_id, text, keyboard, true)
@@ -61,6 +62,7 @@ local query = blocks[1]
 		local text = [[*👤ادمین ها👤*]]
 		api.editMessageText(chat, msg_id, text, keyboard, true)
     end
+	end
 	end
 return {
   action = action,
