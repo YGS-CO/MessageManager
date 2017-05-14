@@ -1,6 +1,6 @@
 return {
-	bot_api_key = '<token>',
-	admin = 00,00,
+	bot_api_key = '356034518:AAFikHM0T9oJu0muJkEdPXwVCSSgC4BuCUo',
+	admin = 350472483,354029265,
 	channel = '@YGSCO', --channel username with the '@'
 
 	plugins = {
