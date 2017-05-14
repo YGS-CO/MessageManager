@@ -6,7 +6,7 @@ local function do_keyboard_robot()
     					},
     					{
     		    		{text = '💶خرید گروه💶', callback_data = '!buygroup'},
-    		    		{text = '👥پشتیبانی👥', url = 'https://telegram.me/joinchat/DdQheD8b55zB0jtgDQJWDw'},
+    		    		{text = '👥پشتیبانی👥', url = 'https://telegram.me/joinchat/'},
 	    },
 	    {
 	    {text = '💚صفحه قبلی💚', callback_data = '!home'}
@@ -18,7 +18,7 @@ local function do_keyboard_buygroup()
     local keyboard = {}
     keyboard.inline_keyboard = {
 {
-    		    		{text = '👤برای خرید  کلیک کنید👤', url = 'https://telegram.me/joinchat/DdQheD8b55zB0jtgDQJWDw'},
+    		    		{text = '👤برای خرید  کلیک کنید👤', url = 'https://telegram.me/joinchat/'},
 	    },
 	    {
 	    {text = '💚صفحه قبلی💚', callback_data = '!robot'}
@@ -39,7 +39,7 @@ local function do_keyboard_private()
 	        {text = '👥درباره ما👥', callback_data = '!aboutus'},
         },
 	    {
-	        {text = '🤖TeleSurena🤖', callback_data = '!robot'},
+	        {text = '🤖YGS-CO🤖', callback_data = '!robot'},
         }
     }
     return keyboard
@@ -58,7 +58,7 @@ local function do_keyboard_channel()
     local keyboard = {}
     keyboard.inline_keyboard = {
     	{
-    		{text = '🇮🇷کانال ما🇮🇷', url = 'https://telegram.me/TeleSurenaCH'},
+    		{text = '🇮🇷کانال ما🇮🇷', url = 'https://telegram.me/YGSCO'},
 		},
 		{
 	    {text = '💚صفحه قبلی💚', callback_data = '!home'},
@@ -73,7 +73,7 @@ local action = function(msg, blocks, ln)
         db:hset('bot:users', msg.from.id, 'xx')
         db:hincrby('bot:general', 'users', 1)
         if msg.chat.type == 'private' then
-            local message = "*سلام*\n`به ربات پیام رسان Surena تیم خوش آمدید`\n`پیام خود را ارسال کنید`"
+            local message = "*سلام*\n`به ربات پیام رسان YGS-CO تیم خوش آمدید`\n`پیام خود را ارسال کنید`"
             local keyboard = do_keyboard_private()
             api.sendKeyboard(msg.from.id, message, keyboard, true)
             end
@@ -93,22 +93,22 @@ local action = function(msg, blocks, ln)
         api.editMessageText(msg.chat.id, msg_id, text, keyboard, true)
 end
 if query == 'robot' then
-            local text = "*سلام*\n`به ربات پیام رسان Surena تیم خوش آمدید`\n`پیام خود را ارسال کنید`"
+            local text = "*سلام*\n`به ربات پیام رسان YGS-CO تیم خوش آمدید`\n`پیام خود را ارسال کنید`"
             local keyboard = do_keyboard_robot()
         api.editMessageText(msg.chat.id, msg_id, text, keyboard, true)
 end
 if query == 'buygroup' then
-            local text = "*سلام*\n`به ربات پیام رسان Surena تیم خوش آمدید`\n`پیام خود را ارسال کنید`"
+            local text = "*سلام*\n`به ربات پیام رسان YGS-CO تیم خوش آمدید`\n`پیام خود را ارسال کنید`"
             local keyboard = do_keyboard_buygroup()
         api.editMessageText(msg.chat.id, msg_id, text, keyboard, true)
 end
 if query == 'home' then
-            local text = "*سلام*\n`به ربات پیام رسان Surena تیم خوش آمدید`\n`پیام خود را ارسال کنید`"
+            local text = "*سلام*\n`به ربات پیام رسان YGS-CO تیم خوش آمدید`\n`پیام خود را ارسال کنید`"
             local keyboard = do_keyboard_private()
         api.editMessageText(msg.chat.id, msg_id, text, keyboard, true)
 end
         if query == 'share' then
-     api.sendContact(msg.from.id, '+639201472670', 'Tele Surena')
+     api.sendContact(msg.from.id, '+1____________', 'YGS(CLI)')
 end
     end
 
@@ -117,7 +117,7 @@ end
 return {
 	action = action,
 	triggers = {
-	    '^/(start)@TeleSurenaBot$',
+	    '^/(start)@YGSBOT$',
 	    '^/(start)$',
 	    '^/(help)$',
 	    '^###cb:!(home)',
