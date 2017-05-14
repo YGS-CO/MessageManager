@@ -17,11 +17,7 @@ local function do_keyboard_sudo()
     local keyboard = {}
     keyboard.inline_keyboard = {
     	{
-    		{text = '👤Dr.Cyber👤', url = 'http://telegram.me/DrCyber'},},
-			{{text = '👤NavidQuick👤', url = 'http://telegram.me/Navid_Quick'},},
-			{{text = '👤Mr_Nitro👤', url = 'http://telegram.me/Mr_Nitro'},},
-			{{text = '👤Shaghayegh👤', url = 'http://telegram.me/Shaghayegh_Quick'},},
-			{{text = '👤Mehdi👤', url = 'http://telegram.me/Uconn'},},
+    		{text = '👤Wolf is dev👤', url = 'http://telegram.me/DevWolf'},},
 			{{text = '💚صفحه قبلی💚', callback_data = '!aboutus'},
 	    }
     }
@@ -31,10 +27,7 @@ local function do_keyboard_admins()
     local keyboard = {}
     keyboard.inline_keyboard = {
     	{
-			{text = '👤AƖιяєzα👤' , url = 'telegram.me/Alirezaw_Tabrizi'},
-			},
-			{
-			{text = '👤»»ρσoყα➣ραყԃαɾ««👤'},
+			{text = '👤Nazi👤' , url = 'telegram.me/NaziJon76'},
 			},
 			{
 	    {text = '💚صفحه قبلی💚', callback_data = '!aboutus'},
